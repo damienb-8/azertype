@@ -8,7 +8,9 @@
         <title>Ma page web</title>
         <script src="scripts/config.js" defer></script>
         <script src="scripts/script.js" defer></script>
+        <script src="scripts/popup.js" defer></script>
         <script src="scripts/main.js" defer></script>
+
         <link rel="stylesheet" href="style/styles.css">
     </head>
 
@@ -42,10 +44,27 @@
             <div class="zoneScore">
                 Votre score : <span>0</span>
             </div>
+
+            <div class="zonePartage">
+                <button>Partager</button>
+            </div>
         </main>
 
         <footer>
             @Copyright : Openclassrooms & 🄯 Copyleft 2025 Damien Bonnot
         </footer>
+
+        <div class="popupBackground">
+            <div class="popup">
+                <div>Partagez votre score</div>
+                <form novalidate>
+                    <label for="nom">Votre nom</label>
+                    <input type="text" id="nom" name="nom" placeholder="Votre nom">
+                    <label for="email">Avec qui voulez-vous partager votre score ?</label>
+                    <input type="email" id="email" name="email" placeholder="nom@domaine.com">
+                    <button id="btnEnvoyerMail">Envoyer</button>
+                </form>
+            </div>
+        </div>
     </body>
 </html>
